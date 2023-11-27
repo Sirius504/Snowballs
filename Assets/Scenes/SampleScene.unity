@@ -1474,7 +1474,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6569679698457848704, guid: ae51e2bf8ae9ab7478e905abaff47660, type: 3}
       propertyPath: m_Name
-      value: Snow (1)
+      value: Snow Particles
       objectReference: {fileID: 0}
     - target: {fileID: 6569679698457848704, guid: ae51e2bf8ae9ab7478e905abaff47660, type: 3}
       propertyPath: m_IsActive
@@ -1500,12 +1500,13 @@ GameObject:
   m_Component:
   - component: {fileID: 1080657880}
   - component: {fileID: 1080657881}
+  - component: {fileID: 1080657882}
   m_Layer: 0
   m_Name: WarmthTrigger
   m_TagString: Heat
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &1080657880
 Transform:
@@ -1538,6 +1539,20 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 1
+--- !u!114 &1080657882
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1080657879}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2666501f1e92a2d49a50370bc1c83441, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _tickTime: 3
+  _healPerTick: 1
 --- !u!1 &1287872176
 GameObject:
   m_ObjectHideFlags: 0
@@ -1552,7 +1567,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &1287872179
 Transform:
@@ -1939,7 +1954,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &1625895319
 Transform:
@@ -2356,7 +2371,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &2002682170
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2566,7 +2581,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &2129169766
 Transform:
