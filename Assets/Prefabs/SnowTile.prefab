@@ -166,7 +166,7 @@ MonoBehaviour:
   - {fileID: 654351817, guid: 3ed30029365e938499efadd9fbb0378d, type: 3}
   - {fileID: -1912924283, guid: 3ed30029365e938499efadd9fbb0378d, type: 3}
   - {fileID: -1007721532, guid: 3ed30029365e938499efadd9fbb0378d, type: 3}
-  - {fileID: -1196316369, guid: 3ed30029365e938499efadd9fbb0378d, type: 3}
+  - {fileID: -1380808745, guid: 3ed30029365e938499efadd9fbb0378d, type: 3}
   spriteRenderer: {fileID: 5646707688644995411}
   _level: 0
 --- !u!1 &5933181583452437672

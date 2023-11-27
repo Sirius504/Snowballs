@@ -21,6 +21,8 @@ public class Movement : MonoBehaviour
     private Vector2 input;
     private Direction _direction;
 
+    public bool CanMove { get; set; }
+
     private void Update()
     {
         if (Input.GetKey(KeyCode.W))
@@ -47,7 +49,9 @@ public class Movement : MonoBehaviour
 
     private void FixedUpdate()
     {
-        rb.velocity = maxSpeed * (Vector3)input.normalized;
+        rb.velocity = CanMove
+            ? maxSpeed * (Vector3)input.normalized
+            : Vector2.zero;
         input = Vector2.zero;
         _animator.SetInteger(DIRECTION_KEY, (int)_direction);
         _animator.SetFloat(SPEED_KEY, rb.velocity.magnitude / maxSpeed);

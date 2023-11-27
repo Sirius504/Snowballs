@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using System.Linq;
+using UnityEngine;
 
 public class SnowTile : MonoBehaviour
 {
@@ -29,7 +30,7 @@ public class SnowTile : MonoBehaviour
             UpdateSprite();
             foreach (var neighbour in _neighbours)
             {
-                neighbour.UpdateSprite();
+                neighbour?.UpdateSprite();
             }
         }
     }
