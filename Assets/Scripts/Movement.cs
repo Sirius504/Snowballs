@@ -42,8 +42,7 @@ public class Movement : MonoBehaviour
         {
             input.x += 1;
             _direction = Direction.Right;
-        }
-        
+        }        
     }
 
     private void FixedUpdate()

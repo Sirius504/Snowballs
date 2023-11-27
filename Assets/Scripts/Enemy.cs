@@ -2,6 +2,7 @@ using System;
 using System.Linq;
 using UnityEngine;
 
+[SelectionBase]
 public class Enemy : MonoBehaviour
 {
     enum State
