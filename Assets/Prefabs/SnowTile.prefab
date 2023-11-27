@@ -135,73 +135,39 @@ MonoBehaviour:
   _lowSnow: {fileID: 5646707688644995411}
   _highSnowSprites:
   - {fileID: 2037384098, guid: 3ed30029365e938499efadd9fbb0378d, type: 3}
-  - {fileID: 2037384098, guid: 3ed30029365e938499efadd9fbb0378d, type: 3}
-  - {fileID: 2037384098, guid: 3ed30029365e938499efadd9fbb0378d, type: 3}
+  - {fileID: -2079888290, guid: 3ed30029365e938499efadd9fbb0378d, type: 3}
+  - {fileID: -1694483719, guid: 3ed30029365e938499efadd9fbb0378d, type: 3}
   - {fileID: -1673205789, guid: 3ed30029365e938499efadd9fbb0378d, type: 3}
-  - {fileID: 2037384098, guid: 3ed30029365e938499efadd9fbb0378d, type: 3}
-  - {fileID: 2037384098, guid: 3ed30029365e938499efadd9fbb0378d, type: 3}
+  - {fileID: -321619798, guid: 3ed30029365e938499efadd9fbb0378d, type: 3}
+  - {fileID: 76076101, guid: 3ed30029365e938499efadd9fbb0378d, type: 3}
   - {fileID: 1113327765, guid: 3ed30029365e938499efadd9fbb0378d, type: 3}
   - {fileID: 162027434, guid: 3ed30029365e938499efadd9fbb0378d, type: 3}
-  - {fileID: 2037384098, guid: 3ed30029365e938499efadd9fbb0378d, type: 3}
+  - {fileID: 1111792460, guid: 3ed30029365e938499efadd9fbb0378d, type: 3}
   - {fileID: 107357956, guid: 3ed30029365e938499efadd9fbb0378d, type: 3}
-  - {fileID: 1846067281, guid: 3ed30029365e938499efadd9fbb0378d, type: 3}
+  - {fileID: 777681301, guid: 3ed30029365e938499efadd9fbb0378d, type: 3}
   - {fileID: -2055062270, guid: 3ed30029365e938499efadd9fbb0378d, type: 3}
   - {fileID: -1837904904, guid: 3ed30029365e938499efadd9fbb0378d, type: 3}
   - {fileID: -692421321, guid: 3ed30029365e938499efadd9fbb0378d, type: 3}
   - {fileID: -683220576, guid: 3ed30029365e938499efadd9fbb0378d, type: 3}
   - {fileID: -2043590282, guid: 3ed30029365e938499efadd9fbb0378d, type: 3}
   _lowSnowSprites:
-  - {fileID: -1196316369, guid: 3ed30029365e938499efadd9fbb0378d, type: 3}
-  - {fileID: -1196316369, guid: 3ed30029365e938499efadd9fbb0378d, type: 3}
-  - {fileID: -1196316369, guid: 3ed30029365e938499efadd9fbb0378d, type: 3}
-  - {fileID: -1196316369, guid: 3ed30029365e938499efadd9fbb0378d, type: 3}
-  - {fileID: -1196316369, guid: 3ed30029365e938499efadd9fbb0378d, type: 3}
-  - {fileID: -1196316369, guid: 3ed30029365e938499efadd9fbb0378d, type: 3}
-  - {fileID: -1196316369, guid: 3ed30029365e938499efadd9fbb0378d, type: 3}
-  - {fileID: -1196316369, guid: 3ed30029365e938499efadd9fbb0378d, type: 3}
-  - {fileID: -1196316369, guid: 3ed30029365e938499efadd9fbb0378d, type: 3}
-  - {fileID: -1196316369, guid: 3ed30029365e938499efadd9fbb0378d, type: 3}
-  - {fileID: -1196316369, guid: 3ed30029365e938499efadd9fbb0378d, type: 3}
-  - {fileID: -1196316369, guid: 3ed30029365e938499efadd9fbb0378d, type: 3}
-  - {fileID: -1196316369, guid: 3ed30029365e938499efadd9fbb0378d, type: 3}
-  - {fileID: -1196316369, guid: 3ed30029365e938499efadd9fbb0378d, type: 3}
-  - {fileID: -1196316369, guid: 3ed30029365e938499efadd9fbb0378d, type: 3}
+  - {fileID: -1143783253, guid: 3ed30029365e938499efadd9fbb0378d, type: 3}
+  - {fileID: 539178687, guid: 3ed30029365e938499efadd9fbb0378d, type: 3}
+  - {fileID: -717829365, guid: 3ed30029365e938499efadd9fbb0378d, type: 3}
+  - {fileID: 476032136, guid: 3ed30029365e938499efadd9fbb0378d, type: 3}
+  - {fileID: 274041791, guid: 3ed30029365e938499efadd9fbb0378d, type: 3}
+  - {fileID: 917897929, guid: 3ed30029365e938499efadd9fbb0378d, type: 3}
+  - {fileID: 541581698, guid: 3ed30029365e938499efadd9fbb0378d, type: 3}
+  - {fileID: -1739823851, guid: 3ed30029365e938499efadd9fbb0378d, type: 3}
+  - {fileID: 2100741028, guid: 3ed30029365e938499efadd9fbb0378d, type: 3}
+  - {fileID: -498948981, guid: 3ed30029365e938499efadd9fbb0378d, type: 3}
+  - {fileID: -656586117, guid: 3ed30029365e938499efadd9fbb0378d, type: 3}
+  - {fileID: -1135628619, guid: 3ed30029365e938499efadd9fbb0378d, type: 3}
+  - {fileID: 654351817, guid: 3ed30029365e938499efadd9fbb0378d, type: 3}
+  - {fileID: -1912924283, guid: 3ed30029365e938499efadd9fbb0378d, type: 3}
+  - {fileID: -1007721532, guid: 3ed30029365e938499efadd9fbb0378d, type: 3}
   - {fileID: -1196316369, guid: 3ed30029365e938499efadd9fbb0378d, type: 3}
   spriteRenderer: {fileID: 5646707688644995411}
-  _spread:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0.0027389526
-      value: 1.0070496
-      inSlope: -0.66909796
-      outSlope: -0.66909796
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0
-      outWeight: 0.19452053
-    - serializedVersion: 3
-      time: 0.78119284
-      value: 0.9127659
-      inSlope: -0.39377344
-      outSlope: -0.39377344
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.37324086
-    - serializedVersion: 3
-      time: 0.9971002
-      value: 0.0030104108
-      inSlope: -4.519062
-      outSlope: -4.519062
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.024657588
-      outWeight: 0
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  _maxLevel: 2
   _level: 0
 --- !u!1 &5933181583452437672
 GameObject:
