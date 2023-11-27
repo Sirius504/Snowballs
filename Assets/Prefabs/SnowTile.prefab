@@ -192,5 +192,5 @@ MonoBehaviour:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
-  _maxLevel: 5
+  _maxLevel: 2
   _level: 0

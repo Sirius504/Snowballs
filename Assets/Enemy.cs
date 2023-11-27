@@ -25,7 +25,7 @@ public class Enemy : MonoBehaviour
     [SerializeField] private float _pushTime = 2f;
     [SerializeField] private float _movementEpsilon = .1f;
 
-    private State _state = State.Pushing;
+    private State _state = State.Aiming;
     private float currentRotation;
     private Vector2 _pushTarget;
     private Vector2 _currentVelocity;
