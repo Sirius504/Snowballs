@@ -2,11 +2,23 @@
 
 public class SnowTile : MonoBehaviour
 {
-    [SerializeField] private Gradient _gradient;
+    // How sprites are mapped onto their indices:
+
+    //
+    //       2  
+    //     1   3
+    //       0  
+    //
+
+    [SerializeField] private SpriteRenderer _highSnow;
+    [SerializeField] private SpriteRenderer _lowSnow;
+
+    [SerializeField] private Sprite[] _highSnowSprites;
+    [SerializeField] private Sprite[] _lowSnowSprites;
+
     [SerializeField] private SpriteRenderer spriteRenderer;
-    [SerializeField] private AnimationCurve _spread;
-    [SerializeField] private int _maxLevel = 5;
     [SerializeField] private int _level;
+    private SnowTile[] _neighbours;
 
     public int Level
     {
@@ -14,18 +26,66 @@ public class SnowTile : MonoBehaviour
         set
         {
             _level = value;
-            UpdateColor();
+            UpdateSprite();
+            foreach (var neighbour in _neighbours)
+            {
+                neighbour.UpdateSprite();
+            }
         }
     }
 
-    private void UpdateColor()
+    public void InitLevel(int level)
     {
-        spriteRenderer.color = _gradient.Evaluate(_level / (float)_maxLevel);
+        _level = level;
     }
 
-    private void Start()
+    public void InjectNeighbours(SnowTile[] neighbours)
     {
-        Level = Mathf.RoundToInt(_spread.Evaluate(Random.value) * _maxLevel);
+        _neighbours = neighbours;
+        UpdateSprite();
     }
 
+
+    public void UpdateSprite()
+    {
+        UpdateHighSnow(_level == 2);
+        UpdateLowSnow(_level == 0);
+    }
+
+
+    private void UpdateHighSnow(bool enable)
+    {
+        _highSnow.gameObject.SetActive(enable);
+        if (!enable)
+        {
+            return;
+        }
+        var index = CalculateSpriteIndexForLevel(2);
+        _highSnow.sprite = _highSnowSprites[index];
+    }
+
+    private void UpdateLowSnow(bool enable)
+    {
+        _lowSnow.gameObject.SetActive(enable);
+        if (!enable)
+        {
+            return;
+        }
+        _lowSnow.sprite = _lowSnowSprites[CalculateSpriteIndexForLevel(0)];
+    }
+    private int CalculateSpriteIndexForLevel(int targetLevel)
+    {
+        int spriteIndex = 0;
+        spriteIndex |= (IsNeighbourOfLevel(0, targetLevel) ? 1 : 0) << 0;
+        spriteIndex |= (IsNeighbourOfLevel(1, targetLevel) ? 1 : 0) << 1;
+        spriteIndex |= (IsNeighbourOfLevel(2, targetLevel) ? 1 : 0) << 2;
+        spriteIndex |= (IsNeighbourOfLevel(3, targetLevel) ? 1 : 0) << 3;
+        return spriteIndex;
+    }
+
+    private bool IsNeighbourOfLevel(int index, int level)
+    {
+        return _neighbours[index] != null
+            && _neighbours[index].Level == level;
+    }
 }

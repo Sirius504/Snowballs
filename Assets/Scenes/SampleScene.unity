@@ -1273,7 +1273,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2059349070471823195, guid: ae51e2bf8ae9ab7478e905abaff47660, type: 3}
       propertyPath: m_Volume
-      value: 0.1
+      value: 0.05
       objectReference: {fileID: 0}
     - target: {fileID: 6569679698457848704, guid: ae51e2bf8ae9ab7478e905abaff47660, type: 3}
       propertyPath: m_Name
@@ -1351,8 +1351,43 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _levelSize: {x: 36, y: 16}
+  _spread:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0.0027275085
+      value: 1.0021973
+      inSlope: -0.05010447
+      outSlope: -0.05010447
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0.14338148
+    - serializedVersion: 3
+      time: 0.70425355
+      value: 0.85521144
+      inSlope: -0.64508456
+      outSlope: -0.64508456
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.2919611
+    - serializedVersion: 3
+      time: 0.9824219
+      value: 0.019447327
+      inSlope: -4.5945654
+      outSlope: -4.5945654
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.13004656
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  _maxLevel: 2
   _grid: {fileID: 1309634600}
   _snowTilePrefab: {fileID: -9182241519607137298, guid: 3e6fcc1c914535343a612762bc32a8de, type: 3}
+  _player: {fileID: 1321399070}
 --- !u!156049354 &1309634600
 Grid:
   m_ObjectHideFlags: 0
@@ -1869,7 +1904,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0.25}
+  m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -1880,7 +1915,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1, y: 0.5}
+  m_Size: {x: 0.4, y: 0.25}
   m_EdgeRadius: 0
 --- !u!1 &2033776968
 GameObject:
