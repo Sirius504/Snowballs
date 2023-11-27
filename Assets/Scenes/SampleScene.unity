@@ -1310,6 +1310,7 @@ GameObject:
   - component: {fileID: 1652437493}
   - component: {fileID: 1652437492}
   - component: {fileID: 1652437494}
+  - component: {fileID: 1652437495}
   m_Layer: 0
   m_Name: Enemy
   m_TagString: Enemy
@@ -1369,6 +1370,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _player: {fileID: 1321399061}
   _rigidbody: {fileID: 1652437492}
+  _health: {fileID: 1652437495}
   _rotationTime: 0.3
   _maxRotationSpeed: 360
   _rotationEpsilon: 5
@@ -1377,6 +1379,19 @@ MonoBehaviour:
   _maxSpeed: 6
   _pushTime: 0.5
   _movementEpsilon: 0.1
+--- !u!114 &1652437495
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1652437491}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0013e4061d1d00c49afaea68bf3e2c61, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _maxHealth: 3
 --- !u!1 &1835846297
 GameObject:
   m_ObjectHideFlags: 0

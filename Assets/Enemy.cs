@@ -12,6 +12,7 @@ public class Enemy : MonoBehaviour
 
     [SerializeField] private GameObject _player;
     [SerializeField] private Rigidbody2D _rigidbody;
+    [SerializeField] private Health _health;
     [Space(5)]
     [Header("Rotation")]
     [SerializeField] private float _rotationTime = 1f;
@@ -56,6 +57,15 @@ public class Enemy : MonoBehaviour
         if (collision.collider.CompareTag("Player"))
         {
             Destroy(gameObject);
+        }
+
+        if (collision.collider.CompareTag("Projectile"))
+        {
+            _health.Change(-1);
+            if (_health.Value == 0)
+            {
+                Destroy(gameObject);
+            }
         }
     }
 

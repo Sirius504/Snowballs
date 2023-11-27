@@ -8,7 +8,7 @@ public class Player : MonoBehaviour
     {
         if (collision.collider.CompareTag("Enemy"))
         {
-            _health.ChangeHealth(-1);
+            _health.Change(-1);
         }
     }
 }

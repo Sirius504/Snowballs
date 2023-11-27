@@ -10,7 +10,7 @@ public class Health : MonoBehaviour
         Value = _maxHealth;
     }
 
-    public void ChangeHealth(int delta)
+    public void Change(int delta)
     {
         Value = Mathf.Clamp(Value + delta, 0, _maxHealth);
     }
