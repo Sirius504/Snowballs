@@ -34,7 +34,6 @@ public class SnowballGrabber : MonoBehaviour
         if (Input.GetKey(KeyCode.Space) && IsPickingUp)
         {
             PickUpProgress = 1 - ((_pickUpTimeEnd - Time.time) / _pickUpTime);
-            Debug.Log(PickUpProgress);
             if (PickUpProgress >= 1f)
             {
                 _tile.Level--;

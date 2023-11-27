@@ -4,6 +4,7 @@ public class Health : MonoBehaviour
 {
     [SerializeField] private int _maxHealth = 5;
     public int Value { get; private set; }
+    public int Max => _maxHealth;
 
     private void Start()
     {
