@@ -3,7 +3,7 @@ using UnityEngine;
 public class SnowballGrabber : MonoBehaviour
 {
     [SerializeField] private Grid _grid;
-    [SerializeField] private Snow _snow;
+    [SerializeField] private Level _snow;
     [SerializeField] private float _pickUpTime = 0.5f;
     [SerializeField] private Movement _movement;
 

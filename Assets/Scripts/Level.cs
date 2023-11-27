@@ -1,7 +1,6 @@
-using System;
 using UnityEngine;
 
-public class Snow : MonoBehaviour
+public class Level : MonoBehaviour
 {
     [SerializeField] private Vector2Int _levelSize;
     [SerializeField] private AnimationCurve _spread;
@@ -11,6 +10,7 @@ public class Snow : MonoBehaviour
     [SerializeField] private Player _player;
 
     private SnowTile[,] _level;
+    private Bounds _levelBounds;
 
     private void Awake()
     {
@@ -29,6 +29,9 @@ public class Snow : MonoBehaviour
             {
                 InitTile(col, row);
             }
+
+        _levelBounds = new Bounds(_grid.CellToWorld(Vector3Int.zero), _grid.cellSize);
+        _levelBounds.Encapsulate(_grid.CellToWorld(new Vector3Int(_levelSize.x, _levelSize.y, 0)) + _grid.cellSize * 0.5f);
     }
 
     private void Update()
@@ -52,5 +55,10 @@ public class Snow : MonoBehaviour
     public SnowTile GetSnowTile(Vector3Int at)
     {
         return _level[at.x, at.y];
+    }
+
+    public Bounds GetLevelBounds()
+    {
+        return _levelBounds;
     }
 }

@@ -32,8 +32,11 @@ public class Enemy : MonoBehaviour
     private Vector2 _pushTarget;
     private Vector2 _currentVelocity;
 
+    public event Action<Enemy> OnDestroyEvent;
+
     private void Start()
     {
+        _player = FindAnyObjectByType<Player>().gameObject;
         _pushTarget = CalculatePushTarget();
     }
 
@@ -68,6 +71,11 @@ public class Enemy : MonoBehaviour
                 Destroy(gameObject);
             }
         }
+    }
+
+    private void OnDestroy()
+    {
+        OnDestroyEvent?.Invoke(this);
     }
 
     private void HandlePushingMovement()
@@ -119,11 +127,5 @@ public class Enemy : MonoBehaviour
             target = _rigidbody.position + toHit;
         }
         return target;
-    }
-
-    private void OnDrawGizmos()
-    {
-        Gizmos.color = Color.yellow;
-        Gizmos.DrawCube(_pushTarget, Vector3.one * 0.2f);
     }
 }
